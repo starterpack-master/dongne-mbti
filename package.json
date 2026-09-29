@@ -1,0 +1,30 @@
+{
+  "name": "dongne-mbti",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "우리 동네 MBTI — 전국 상가 데이터로 분석한 동네 성격 테스트",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "data": "python3 scripts/build_data.py",
+    "deploy": "npm run build && gh-pages -d dist --nojekyll -m \"Deploy site\""
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^11.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vite-plugin-singlefile": "^2.1.0"
+  }
+}
